@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Socket ChatIO</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="container">
+    <div id="namesWrapper">
+        <h2>ChatIO</h2>
+
+        <p>Createv Username</p>
+
+        <div id="error"></div>
+        <form action="" id="usernameForm">
+            <input type="text" size="35" id="username"/>
+            <input type="submit" value="submit"/>
+        </form>
+    </div>
+    <div id="mainWrapper">
+        <h2>ChatIO</h2>
+
+        <div id="chatWrapper">
+            <div id="chatWindow"></div>
+            <form action="/" id="messageForm">
+                <input type="text" size="35" id="message" placeholder="type something"/>
+                <input type="submit" value="say it!"/>
+                <a class="quit" href="/">quit</a>
+            </form>
+        </div>
+        <div id="userWrapper">
+            <div id="users"></div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="
+        crossorigin="anonymous"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/js.js"></script>
+</body>
+</html>
